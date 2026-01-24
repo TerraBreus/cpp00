@@ -80,4 +80,7 @@ and it will print the value of s1 at the time of copying, not the current value.
 
 FUCKING AWESOME!
 
+## 24-01
+Difficulty focusing, feeling a little lost in the forest again. 
 
+In general, when writing in cpp you will have a bunch more files compared to c. Especially when working with classes. Good practice is to have a .cpp file and a .hpp file for every class used. The .cpp file will have all (public) functions (we also call them member functions) and the .hpp file will have the actual class.
