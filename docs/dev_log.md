@@ -84,3 +84,14 @@ FUCKING AWESOME!
 Difficulty focusing, feeling a little lost in the forest again. 
 
 In general, when writing in cpp you will have a bunch more files compared to c. Especially when working with classes. Good practice is to have a .cpp file and a .hpp file for every class used. The .cpp file will have all (public) functions (we also call them member functions) and the .hpp file will have the actual class.
+
+## 06-02
+Boy how time passes. Basically started from scratch again but this time knowing where and what to look for.
+
+Some things I learned;
+
+- Makefile: Fun.
+        $@ shortcut for target. $< Shortcut for object
+        
+        $(SRC:%.cpp=%.o) -> everything with a .cpp extension in the src target, changed to a .o file
+- std::toupper(char s) -> cool and simple.
