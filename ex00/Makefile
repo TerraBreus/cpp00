@@ -3,7 +3,7 @@ CPPFLAGS = -Wall -Werror -Wextra -std=c++98
 CPP	= c++
 
 SRC = megaphone.cpp
-OBJ = $(SRC:.cpp=.o)
+OBJ = $(SRC:%.cpp=%.o)
 
 all : $(NAME)
 
