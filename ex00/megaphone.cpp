@@ -11,33 +11,25 @@
 /* ************************************************************************** */
 
 #include <iostream>
-
-int	is_lower(char a)
-{
-	if (a >= 'a' && a <= 'z')
-		return (1);
-	return (0);
-}
+#include <string>
 
 int	main(int argc, char **argv)
 {
 	int		i;
-	int		j;
 
 	if (argc == 1)
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
+	else
 	{
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *\n";
-		return (0);
-	}
-
-	for (i = 1; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		for (i = 1; i < argc; i++)
 		{
-			if (is_lower(argv[i][j]))
-					std::cout << (char) (argv[i][j] - 32);
-			else
-					std::cout << argv[i][j];
+			std::string	str;
+			str = argv[i];
+			for (size_t j = 0; j < str.length(); j++)
+				str[j] = std::toupper(str[j]);
+			std::cout << str;
+			if (i < argc - 1)
+				std::cout << " ";
 		}
 	}
 	std::cout << '\n';
