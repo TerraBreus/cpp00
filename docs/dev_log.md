@@ -91,7 +91,38 @@ Boy how time passes. Basically started from scratch again but this time knowing 
 Some things I learned;
 
 - Makefile: Fun.
-        $@ shortcut for target. $< Shortcut for object
+        $@ shortcut for target. $< Shortcut for object/dependency
         
         $(SRC:%.cpp=%.o) -> everything with a .cpp extension in the src target, changed to a .o file
 - std::toupper(char s) -> cool and simple.
+
+## 09-02
+Wish I could describe my current feeling. I don't wish to sit in silence yet noise disturbs me. I'm doing things, slowly, yet it feels like time is flying by. Anyway, it would be silly to say no progress has been made so here is a little summmary after sitting behind a desk for over four hours.
+
+```Makefile
+%.o : %.cpp
+    $(CPP) $(FLAGS) -c $< -o $@
+```
+This is a neat way to have all your object files compiled from the cpp files. If, in your Makefile you have something like;
+```
+$(OBJ) = $(SRC:%.cpp=%.o)
+```
+We can interpret it as, all files in the SRC variable, with a .cpp extension will have the same name (`%`) but with the `.o` extension. But if the relevant `.o` file does not exist, it goes to the rule two codeblocks back and create the target (`$@` - easy to remember cause it looks like one of those target emoji's) from it's dependency (`.cpp`).
+
+Now I have more or less learned how to create my Makefiles. It only took 15 months!
+
+Now to cpp.
+
+There is a lot but it also doesn't feel like much. A big difference in thinking is creating functionfiles for classfunctions. So if I were to have some kind of class (defined in `foobar.hpp`) I would have its (public?) functions defined in `foobar.hpp`.
+
+I'm only just starting, but the shift feels logical and easy. It is neat. Tidy.
+
+Another small thing is `passing by reference`. In C you would do this by usage of pointers. In CPP you do this by defining it in the function prototype. `someFunc(int &someInt);`
+The `&` sign declares that we will use the actual value of the variable and not a copy. We don't have to do anything when we call the function. `someFunc(anotherInteger);`.
+In C you would always have to match the prototype, so if you used a pointer, you would have to use the `&` operator so that we use the memoryadress of the variable instead of the actual value itself. In CPP it's the same (sort of) but the other way around. I guess this makes sense since when you write the function you will know whether you want to use the variable as a copy, or genuinly modidy it yourself. If at some point you change your mind, you only have to change the prototype of the function and not sift through your entire program to add/remove the `&` operator.
+
+Yeah I mean apart, from that... maybe `std::getline(std::cin, someStr);`? It's similar to `std::cin >> someStr` but looks for the newline instead of whitespace. `std::cin` splits the input and keeps it untill the buffer is empty.
+
+So if you put in `hello world, COOOL`. The first time you `cin` it will have `hello` but the second time it won't ask for input from the user since it still has `world,` in the buffer. Only after the third time, when `cin` has overloaded `COOOL` into a string, will it ask input from the user again.
+
+This is useful in some cases, but not for the phoneBook exercise (I think).
