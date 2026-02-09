@@ -126,3 +126,6 @@ Yeah I mean apart, from that... maybe `std::getline(std::cin, someStr);`? It's s
 So if you put in `hello world, COOOL`. The first time you `cin` it will have `hello` but the second time it won't ask for input from the user since it still has `world,` in the buffer. Only after the third time, when `cin` has overloaded `COOOL` into a string, will it ask input from the user again.
 
 This is useful in some cases, but not for the phoneBook exercise (I think).
+
+
+Next thing I'm learning are constructors. Whenever you declare a class in your code it's constructor will run. Constructors are a special type of memberfunction that gets called the moment you declare an instance of the class. Constructors are identiable by having the exact same name as the class itself. They are not necessary for this module per se but they are a nice way of initializing variables which we want for one specific variable (`index`) in the phonebook class so we might as well use it.
