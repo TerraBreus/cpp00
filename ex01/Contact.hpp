@@ -6,7 +6,7 @@
 /*   By: zivanov <zivanov@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 10:48:54 by zivanov           #+#    #+#             */
-/*   Updated: 2026/02/09 11:23:16 by zivanov          ###   ########.fr       */
+/*   Updated: 2026/02/09 14:23:29 by zivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ class Contact
 		std::string	phoneNumber;
 		std::string	darkestSecret;
 	public :
+		void		setContactDetails();
 };
 #endif
