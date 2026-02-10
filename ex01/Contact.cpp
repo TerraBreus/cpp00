@@ -44,10 +44,10 @@ std::string	askForInput(std::string prompt)
 
 void	Contact::setContactDetails()
 {
-	Contact::firstName = askForInput("Please enter First name of Contact");
-	Contact::lastName = askForInput("Please enter Last name of Contact");
-	Contact::nickName = askForInput("Please enter a nickname for Contact");
-	Contact::phoneNumber = askForInput("Please enter a phonenumber for Contact");
-	Contact::darkestSecret = askForInput("Please enter Contact's darkest secret");
+	firstName = askForInput("Please enter First name of Contact");
+	lastName = askForInput("Please enter Last name of Contact");
+	nickName = askForInput("Please enter a nickname for Contact");
+	phoneNumber = askForInput("Please enter a phonenumber for Contact");
+	darkestSecret = askForInput("Please enter Contact's darkest secret");
 	std::cout << "Contact has been added!" << std::endl;
 }
