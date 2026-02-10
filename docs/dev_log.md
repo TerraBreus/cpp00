@@ -129,3 +129,10 @@ This is useful in some cases, but not for the phoneBook exercise (I think).
 
 
 Next thing I'm learning are constructors. Whenever you declare a class in your code it's constructor will run. Constructors are a special type of memberfunction that gets called the moment you declare an instance of the class. Constructors are identiable by having the exact same name as the class itself. They are not necessary for this module per se but they are a nice way of initializing variables which we want for one specific variable (`index`) in the phonebook class so we might as well use it.
+
+## 10-02
+So far we haven't really used anything new. Simply writing and experimenting with c++.
+
+One thing I will probably use soon is the `std::setw()` command which allows me to set the width.
+
+Another thing I'm noticing is correct usage of member functions. Memberfuntctions must be explicitly stated in the class itself (in the public section). I will have to rethink my use of member functions a little. Specifically due to the necessaity of memberfunctions needing to be in their relevant file. So we shouldn't try to have general functions (like strCapitalize) in a file that contains the memberfunctions of a particular class.
