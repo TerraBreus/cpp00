@@ -24,5 +24,6 @@ class Contact
 		std::string	darkestSecret;
 	public :
 		void		setContactDetails();
+		std::string	getFirstName();
 };
 #endif
