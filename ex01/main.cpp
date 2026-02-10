@@ -29,6 +29,7 @@ int	main(void)
 	
 	while (42)
 	{
+		std::cout << "Commands: ADD/SEARCH/EXIT" << std::endl;
 		std::getline(std::cin, userInput);
 		capitalizeString(userInput);
 		if (userInput == "ADD")
@@ -37,6 +38,8 @@ int	main(void)
 			phoneBook.search();
 		else if (userInput == "EXIT")
 			break ;
+		else
+			std::cout << "Invalid command." << std::endl;
 	}
 	return (0);
 }
