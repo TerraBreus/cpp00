@@ -21,7 +21,7 @@ PhoneBook::PhoneBook() : index(-1)
 void	PhoneBook::add()
 {
 	index = (index + 1) % MAX_CONTACTS;
-	std::cout << index << "\n";
+	std::cout << "Adding Contact with index number:" << index << "\n";
 	contacts[index].setContactDetails();
 }
 
