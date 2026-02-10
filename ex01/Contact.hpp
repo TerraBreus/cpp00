@@ -25,5 +25,9 @@ class Contact
 	public :
 		void		setContactDetails();
 		std::string	getFirstName();
+		std::string	getLastName();
+		std::string	getNickName();
+		std::string	getPhoneNumber();
+		std::string	getDarkestSecret();
 };
 #endif
