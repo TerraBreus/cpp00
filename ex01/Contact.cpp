@@ -51,3 +51,8 @@ void	Contact::setContactDetails()
 	darkestSecret = askForInput("Please enter Contact's darkest secret");
 	std::cout << "Contact has been added!" << std::endl;
 }
+
+std::string	Contact::getFirstName()
+{
+	return (firstName);
+}
