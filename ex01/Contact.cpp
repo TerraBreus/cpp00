@@ -45,11 +45,9 @@ std::string	askForInput(std::string prompt)
 void	Contact::setContactDetails()
 {
 	Contact::firstName = askForInput("Please enter First name of Contact");
-	std::cout << "User has given a firstName of: " << Contact::firstName << std::endl;
-	/*
-	 * Get input from user.
-	 * Check if non-empty input.
-	 * Set variable.
-	 * Repeat five times.
-	*/
+	Contact::lastName = askForInput("Please enter Last name of Contact");
+	Contact::nickName = askForInput("Please enter a nickname for Contact");
+	Contact::phoneNumber = askForInput("Please enter a phonenumber for Contact");
+	Contact::darkestSecret = askForInput("Please enter Contact's darkest secret");
+	std::cout << "Contact has been added!" << std::endl;
 }
