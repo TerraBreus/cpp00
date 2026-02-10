@@ -13,18 +13,23 @@
 #ifndef PHONEBOOK_HPP
 # define PHONEBOOK_HPP
 # define MAX_CONTACTS 8
+# define TABLE_WIDTH 10
 # include "Contact.hpp"
 # include <iostream>
+
+//std::setw(int someInt)
 
 class PhoneBook
 {
 	private :
 		Contact	contacts[MAX_CONTACTS];
 		int		index;
+		int		numContacts;
 	public :
 		PhoneBook();
 		void	add();
 		void	search();
+		void	printBriefContactDetails();
 };
 
 #endif
