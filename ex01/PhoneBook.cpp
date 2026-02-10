@@ -12,6 +12,9 @@
 
 #include "PhoneBook.hpp"
 #include <iostream>
+#include <iomanip>
+#include <cstdlib>
+#include <string>
 
 PhoneBook::PhoneBook() : index(-1), numContacts(0)
 {
@@ -40,11 +43,24 @@ void	PhoneBook::add()
 
 }
 
+void	printElementInWidth(std::string str, int width)
+{
+	if (str.length() > (size_t) width)
+	{
+		std::cout << str.substr(0, width - 1) << ".";
+	}
+	else
+	{
+		std::cout << std::setw(width) << str;
+	}
+}
+
 void	PhoneBook::printBriefContactDetails()
 {
 	for (int i = 0; i < numContacts; i++)
 	{
-		std::cout << "Printing index " << i << std::endl;
+		printElementInWidth(contacts[i].getFirstName(), TABLE_WIDTH);
+		std::cout << std::endl;
 	}
 }
 
