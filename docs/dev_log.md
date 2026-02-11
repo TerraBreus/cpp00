@@ -136,3 +136,10 @@ So far we haven't really used anything new. Simply writing and experimenting wit
 One thing I will probably use soon is the `std::setw()` command which allows me to set the width.
 
 Another thing I'm noticing is correct usage of member functions. Memberfuntctions must be explicitly stated in the class itself (in the public section). I will have to rethink my use of member functions a little. Specifically due to the necessaity of memberfunctions needing to be in their relevant file. So we shouldn't try to have general functions (like strCapitalize) in a file that contains the memberfunctions of a particular class.
+
+## 11-02
+Haven't learned much new as of now I believe. `std::atoi` I guess... and then using the `.c_str` to convert a `std::str` datatype to a `char *` type so that the `atoi` function can understand it. I want to understand the `std::setw` function better but also wan't to go on.
+
+Yeah not the most fruitful day of all but I did get to finish ex01 so it seems I learned everything I had to already.
+
+Hoping to finish of with a README for the project
