@@ -5,6 +5,7 @@ FLAGS := -Wall -Werror -Wextra -std=c++98
 SRC := \
 	PhoneBook.cpp \
 	Contact.cpp \
+	utils.cpp \
 	main.cpp
 
 OBJ := $(SRC:%.cpp=%.o)
