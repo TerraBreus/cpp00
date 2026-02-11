@@ -6,7 +6,7 @@
 /*   By: zivanov <zivanov@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 10:46:51 by zivanov           #+#    #+#             */
-/*   Updated: 2026/02/09 14:36:39 by zivanov          ###   ########.fr       */
+/*   Updated: 2026/02/11 11:35:12 by zivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 # define MAX_CONTACTS 8
 # define TABLE_WIDTH 10
 # include "Contact.hpp"
-# include <iostream>
-
-//std::setw(int someInt)
+# include "utils.hpp"
 
 class PhoneBook
 {
