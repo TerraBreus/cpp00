@@ -6,11 +6,19 @@
 /*   By: zivanov <zivanov@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 11:27:44 by zivanov           #+#    #+#             */
-/*   Updated: 2026/02/11 11:33:23 by zivanov          ###   ########.fr       */
+/*   Updated: 2026/02/11 12:17:15 by zivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "utils.hpp"
+
+void	capitalizeString(std::string &str)
+{
+	for (size_t i = 0; i < str.length(); i++)
+	{
+		str[i] = std::toupper(str[i]);
+	}
+}
 
 int		invalidInput(std::string str)
 {

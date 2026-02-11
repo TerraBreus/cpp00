@@ -6,7 +6,7 @@
 /*   By: zivanov <zivanov@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 11:29:25 by zivanov           #+#    #+#             */
-/*   Updated: 2026/02/11 11:34:47 by zivanov          ###   ########.fr       */
+/*   Updated: 2026/02/11 12:17:15 by zivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <string>
 # include <cstdlib>
 
-
+void	capitalizeString(std::string &str);
 int		invalidInput(std::string str);
 std::string	askForInput(std::string prompt);
 

@@ -6,19 +6,13 @@
 /*   By: zivanov <zivanov@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 09:55:02 by zivanov           #+#    #+#             */
-/*   Updated: 2026/02/11 11:39:37 by zivanov          ###   ########.fr       */
+/*   Updated: 2026/02/11 12:17:15 by zivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 
-void	capitalizeString(std::string &str)
-{
-	for (size_t i = 0; i < str.length(); i++)
-	{
-		str[i] = std::toupper(str[i]);
-	}
-}
+
 
 int	main(void)
 {
