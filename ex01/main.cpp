@@ -6,13 +6,11 @@
 /*   By: zivanov <zivanov@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 09:55:02 by zivanov           #+#    #+#             */
-/*   Updated: 2026/02/09 13:40:22 by zivanov          ###   ########.fr       */
+/*   Updated: 2026/02/11 11:39:37 by zivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
-#include <iostream>
-#include <string>
 
 void	capitalizeString(std::string &str)
 {
