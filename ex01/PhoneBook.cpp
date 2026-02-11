@@ -6,7 +6,7 @@
 /*   By: zivanov <zivanov@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 10:21:24 by zivanov           #+#    #+#             */
-/*   Updated: 2026/02/11 11:35:04 by zivanov          ###   ########.fr       */
+/*   Updated: 2026/02/11 13:04:33 by zivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,42 @@ void	PhoneBook::printBriefContactDetails()
 	}
 }
 
+void	PhoneBook::printFullContactDetails(int index)
+{
+	std::cout << "Name: ";
+	std::cout << contacts[index].getFirstName() << "\n";
+	std::cout << "Surname: ";
+	std::cout << contacts[index].getLastName() << "\n";
+	std::cout << "Nickname: ";
+	std::cout << contacts[index].getNickName() << "\n";
+	std::cout << "Phonenumber: ";
+	std::cout << contacts[index].getPhoneNumber() << "\n";
+	std::cout << "Darkest Secret: ";
+	std::cout << contacts[index].getDarkestSecret();
+	std::cout << std::endl;
+}
+
 void	PhoneBook::search()
 {
+	std::string	userInput;
+	int			userIndex;
+
 	printBriefContactDetails();
-	askForInput("Enter index to view full contact information");
+	while (42)
+	{
+		userInput = askForInput("Enter index to view full contact information or press q to exit");
+		if (userInput == "q")
+			break ;
+		userIndex = std::atoi(userInput.c_str());
+		if (userIndex < 0 || userIndex > numContacts - 1)
+		{
+			std::cout << "Please enter a number between 0 and " << numContacts - 1 << std::endl;
+			continue ;
+		}
+		printFullContactDetails(userIndex);
+		break ;
+	}
+}
 	/*
 	 * Print Initial Contact information
 	 * index - firstName - lastName - nickName
@@ -72,5 +104,3 @@ void	PhoneBook::search()
 	 *
 	 * if valid index displayAllContactDetails
 	 */
-}
-

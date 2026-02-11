@@ -6,7 +6,7 @@
 /*   By: zivanov <zivanov@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 10:46:51 by zivanov           #+#    #+#             */
-/*   Updated: 2026/02/11 11:35:12 by zivanov          ###   ########.fr       */
+/*   Updated: 2026/02/11 12:51:43 by zivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ class PhoneBook
 		void	add();
 		void	search();
 		void	printBriefContactDetails();
+		void	printFullContactDetails(int index);
 };
 
 #endif
