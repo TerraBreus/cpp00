@@ -6,7 +6,7 @@
 /*   By: zivanov <zivanov@student.codam.nl>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 10:46:51 by zivanov           #+#    #+#             */
-/*   Updated: 2026/02/11 12:51:43 by zivanov          ###   ########.fr       */
+/*   Updated: 2026/02/11 13:50:47 by zivanov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 # define TABLE_WIDTH 10
 # include "Contact.hpp"
 # include "utils.hpp"
+# include <iostream>
+# include <iomanip>
+# include <string>
+# include <cstdlib>
 
 class PhoneBook
 {
